@@ -4,13 +4,13 @@
   "description": "Spotify player widget in React",
   "main": "dist/SpotifyPlayer.js",
   "scripts": {
-    "lint": "./node_modules/.bin/eslint ./**/*.js"
+    "lint": "eslint ./**/*.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexanderwallin/react-spotify-player.git"
   },
-  "keywords": [],
+  "keywords": ["spotify", "widget", "player", "react", "component"],
   "author": "Alexander Wallin <office@alexanderwallin.com> (http://alexanderwallin.com)",
   "license": "ISC",
   "bugs": {
