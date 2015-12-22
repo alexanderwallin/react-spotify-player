@@ -4,6 +4,6 @@ import ReactDOM from 'react-dom';
 import SpotifyPlayer from '../dist/SpotifyPlayer.js';
 
 ReactDOM.render(
-  <SpotifyPlayer uri="spotify:album:1TIUsv8qmYLpBEhvmBmyBk" size={{width: 500, height: 800}} theme="white" view="coverart" />,
+  <SpotifyPlayer uri="spotify:album:1TIUsv8qmYLpBEhvmBmyBk" size={{width: 800, height: 500}} theme="white" view="view" />,
   document.querySelector('.player')
 );
