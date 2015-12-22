@@ -13,3 +13,6 @@ Thumbs.db
 logs
 npm-debug.log*
 node_modules
+
+
+dist
