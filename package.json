@@ -12,7 +12,7 @@
     "build:examples": "browserify examples/examples.js -t babelify -o examples/examples.dist.js",
     "dev": "npm run build -- --watch",
     "dev:examples": "watchify examples/examples.js -t babelify -o examples/examples.dist.js",
-    "lint": "eslint ./**/*.js"
+    "lint": "eslint ./src/*.jsx"
   },
   "repository": {
     "type": "git",
@@ -39,6 +39,7 @@
     "babelify": "^7.2.0",
     "eslint": "^1.10.3",
     "eslint-config-airbnb": "^2.1.1",
+    "eslint-plugin-react": "^3.12.0",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
     "watchify": "^3.6.1"
