@@ -1,0 +1,26 @@
+{
+  "name": "react-spotify-player",
+  "version": "1.0.0",
+  "description": "Spotify player widget in React",
+  "main": "dist/SpotifyPlayer.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint ./**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexanderwallin/react-spotify-player.git"
+  },
+  "keywords": [],
+  "author": "Alexander Wallin <office@alexanderwallin.com> (http://alexanderwallin.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexanderwallin/react-spotify-player/issues"
+  },
+  "homepage": "https://github.com/alexanderwallin/react-spotify-player#readme",
+  "devDependencies": {
+    "babel": "^6.3.13",
+    "babel-preset-es2015": "^6.3.13",
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^2.1.1"
+  }
+}
