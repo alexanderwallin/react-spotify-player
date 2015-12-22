@@ -1,0 +1,16 @@
+{
+  "build": {
+    "dest": "dist",
+    "src": "src",
+    "transpiler": "babel"
+  },
+  "bump": {
+    "commit": true,
+    "message": "Updates to version %s",
+    "tag": true
+  },
+  "release": {
+    "push": true,
+    "pushTags": true
+  }
+}
