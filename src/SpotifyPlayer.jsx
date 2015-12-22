@@ -9,7 +9,7 @@
 import React from 'react';
 
 // Dimension prop type
-const dimensionPropType = React.PropTypes.oneOf([React.PropTypes.number, React.PropTypes.string]);
+const dimensionPropType = React.PropTypes.oneOfType([React.PropTypes.number, React.PropTypes.string]);
 
 // Size presets, defined by Spotify
 const sizePresets = {
@@ -61,12 +61,8 @@ const SpotifyPlayer = React.createClass({
     };
   },
 
-  componentDidMount() {
-
-  },
-
   // ------------------------------------------------------
-  // Rendering
+  // Render
   // ------------------------------------------------------
 
   render() {
@@ -81,7 +77,7 @@ const SpotifyPlayer = React.createClass({
       <iframe
         className="SpotifyPlayer"
         src={`https://embed.spotify.com/?uri=${uri}&view=${view}&theme=${theme}`}
-        width={size.height}
+        width={size.width}
         height={size.height}
         frameBorder="0"
         allowTransparency="true"
