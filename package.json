@@ -4,6 +4,8 @@
   "description": "Spotify player widget in React",
   "main": "dist/SpotifyPlayer.js",
   "scripts": {
+    "build": "babel src --out-dir dist",
+    "dev": "npm run build -- --watch",
     "lint": "eslint ./**/*.js"
   },
   "repository": {
@@ -19,7 +21,9 @@
   "homepage": "https://github.com/alexanderwallin/react-spotify-player#readme",
   "devDependencies": {
     "babel": "^6.3.13",
+    "babel-cli": "^6.3.17",
     "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
     "eslint": "^1.10.3",
     "eslint-config-airbnb": "^2.1.1"
   }
