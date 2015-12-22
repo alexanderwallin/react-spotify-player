@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Spotify player widget in React",
   "main": "dist/SpotifyPlayer.js",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "build": "babel src --out-dir dist",
     "build:examples": "browserify examples/examples.js -t babelify -o examples/examples.dist.js",
