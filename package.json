@@ -5,7 +5,9 @@
   "main": "dist/SpotifyPlayer.js",
   "scripts": {
     "build": "babel src --out-dir dist",
+    "build:examples": "browserify examples/examples.js -t babelify -o examples/examples.dist.js",
     "dev": "npm run build -- --watch",
+    "dev:examples": "watchify examples/examples.js -t babelify -o examples/examples.dist.js",
     "lint": "eslint ./**/*.js"
   },
   "repository": {
@@ -30,8 +32,11 @@
     "babel-cli": "^6.3.17",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
+    "babelify": "^7.2.0",
     "eslint": "^1.10.3",
     "eslint-config-airbnb": "^2.1.1",
-    "react": "^0.14.3"
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "watchify": "^3.6.1"
   }
 }

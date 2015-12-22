@@ -16,3 +16,4 @@ node_modules
 
 
 dist
+examples/examples.dist.js
