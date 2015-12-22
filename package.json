@@ -12,7 +12,13 @@
     "type": "git",
     "url": "git+https://github.com/alexanderwallin/react-spotify-player.git"
   },
-  "keywords": ["spotify", "widget", "player", "react", "component"],
+  "keywords": [
+    "spotify",
+    "widget",
+    "player",
+    "react",
+    "component"
+  ],
   "author": "Alexander Wallin <office@alexanderwallin.com> (http://alexanderwallin.com)",
   "license": "ISC",
   "bugs": {
