@@ -28,7 +28,7 @@ const theme = 'black'; // or 'white'
   size={size}
   view={view}
   theme={theme}
->
+/>
 ```
 
 Read more details about the player widget at the [Spotify Play Button docs](https://developer.spotify.com/technologies/widgets/spotify-play-button/).
