@@ -1,9 +1,5 @@
 {
-  "build": {
-    "dest": "dist",
-    "src": "src",
-    "transpiler": "babel"
-  },
+  "build": ["npm run build"],
   "bump": {
     "commit": true,
     "message": "Updates to version %s",
