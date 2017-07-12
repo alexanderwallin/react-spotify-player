@@ -19,6 +19,7 @@
     "url": "git+https://github.com/alexanderwallin/react-spotify-player.git"
   },
   "keywords": [
+    "react-component",
     "spotify",
     "widget",
     "player",
