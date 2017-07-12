@@ -36,8 +36,7 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "babel": "^6.3.13",
-    "babel-cli": "^6.3.17",
+    "babel-cli": "^6.24.1",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
     "babelify": "^7.2.0",
