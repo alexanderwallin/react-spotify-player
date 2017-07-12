@@ -7,9 +7,10 @@
  */
 
 import React from 'react';
+import PropTypes from 'prop-types';
 
 // Dimension prop type
-const dimensionPropType = React.PropTypes.oneOfType([React.PropTypes.number, React.PropTypes.string]);
+const dimensionPropType = PropTypes.oneOfType([PropTypes.number, PropTypes.string]);
 
 // Size presets, defined by Spotify
 const sizePresets = {
@@ -35,22 +36,22 @@ const SpotifyPlayer = React.createClass({
   propTypes: {
 
     // Spotify URI
-    uri: React.PropTypes.string.isRequired,
+    uri: PropTypes.string.isRequired,
 
     // Size as either a preset or as custom dimensions
-    size: React.PropTypes.oneOfType([
-      React.PropTypes.oneOf(['large', 'compact']),
-      React.PropTypes.shape({
+    size: PropTypes.oneOfType([
+      PropTypes.oneOf(['large', 'compact']),
+      PropTypes.shape({
         width: dimensionPropType,
         height: dimensionPropType,
       }),
     ]),
 
     // View
-    view: React.PropTypes.oneOf(['list', 'coverart']),
+    view: PropTypes.oneOf(['list', 'coverart']),
 
     // Theme
-    theme: React.PropTypes.oneOf(['black', 'white']),
+    theme: PropTypes.oneOf(['black', 'white']),
   },
 
   getDefaultProps() {
