@@ -6,7 +6,7 @@
  * @see https://developer.spotify.com/technologies/widgets/spotify-play-button/
  */
 
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 // Dimension prop type
@@ -27,40 +27,7 @@ const sizePresets = {
 /**
  * SpotifyPlayer class
  */
-const SpotifyPlayer = React.createClass({
-
-  // ------------------------------------------------------
-  // Component specs & lifecycle
-  // ------------------------------------------------------
-
-  propTypes: {
-
-    // Spotify URI
-    uri: PropTypes.string.isRequired,
-
-    // Size as either a preset or as custom dimensions
-    size: PropTypes.oneOfType([
-      PropTypes.oneOf(['large', 'compact']),
-      PropTypes.shape({
-        width: dimensionPropType,
-        height: dimensionPropType,
-      }),
-    ]),
-
-    // View
-    view: PropTypes.oneOf(['list', 'coverart']),
-
-    // Theme
-    theme: PropTypes.oneOf(['black', 'white']),
-  },
-
-  getDefaultProps() {
-    return {
-      size: 'large',
-      view: 'list',
-      theme: 'black',
-    };
-  },
+class SpotifyPlayer extends Component {
 
   // ------------------------------------------------------
   // Render
@@ -84,8 +51,35 @@ const SpotifyPlayer = React.createClass({
         allowTransparency="true"
       />
     );
-  },
+  }
 
-});
+};
+
+SpotifyPlayer.propTypes = {
+
+  // Spotify URI
+  uri: PropTypes.string.isRequired,
+
+  // Size as either a preset or as custom dimensions
+  size: PropTypes.oneOfType([
+    PropTypes.oneOf(['large', 'compact']),
+    PropTypes.shape({
+      width: dimensionPropType,
+      height: dimensionPropType,
+    }),
+  ]),
+
+  // View
+  view: PropTypes.oneOf(['list', 'coverart']),
+
+  // Theme
+  theme: PropTypes.oneOf(['black', 'white']),
+}
+
+SpotifyPlayer.defaultProps = {
+  size: 'large',
+  view: 'list',
+  theme: 'black'
+}
 
 export default SpotifyPlayer;
