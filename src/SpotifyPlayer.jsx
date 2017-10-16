@@ -53,7 +53,7 @@ class SpotifyPlayer extends Component {
     );
   }
 
-};
+}
 
 SpotifyPlayer.propTypes = {
 
@@ -74,12 +74,12 @@ SpotifyPlayer.propTypes = {
 
   // Theme
   theme: PropTypes.oneOf(['black', 'white']),
-}
+};
 
 SpotifyPlayer.defaultProps = {
   size: 'large',
   view: 'list',
-  theme: 'black'
-}
+  theme: 'black',
+};
 
 export default SpotifyPlayer;
