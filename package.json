@@ -1,6 +1,6 @@
 {
   "name": "react-spotify-player",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Spotify player widget in React",
   "main": "dist/SpotifyPlayer.js",
   "files": [
