@@ -1,3 +1,4 @@
+/* eslint react/no-unknown-property: 0 */
 
 /**
  * Spotify player iframe widget
