@@ -43,12 +43,13 @@ class SpotifyPlayer extends Component {
 
     return (
       <iframe
+        title="Spotify"
         className="SpotifyPlayer"
         src={`https://embed.spotify.com/?uri=${uri}&view=${view}&theme=${theme}`}
         width={size.width}
         height={size.height}
         frameBorder="0"
-        allowTransparency="true"
+        allowtransparency="true"
       />
     );
   }
